@@ -1,0 +1,34 @@
+@import "../base/fonts";
+.body {
+  display: grid;
+  grid-template-areas: "";
+}
+.main {
+  display: grid;
+  grid-template-areas:
+                        "article aside"
+                        "article ads";
+  grid-auto-columns: 3fr 1fr;
+
+}
+.article {
+  grid-area: article;
+  width: 50%;
+  padding: 30px 65px;
+}
+
+.article__text {
+  @include main-text($fontSizeMain, $fontWeightBold)
+}
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-areas: "ads"
+                        "article"
+                        "aside";
+  }
+  .article {
+    width: auto;
+  }
+
+}
