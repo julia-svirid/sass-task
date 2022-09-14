@@ -1,0 +1,19 @@
+$fontWeightNormal: 400;
+$fontWeightBold: 700;
+$fontSizeH3: 28px;
+$fontSizeMain: 20px;
+$fontSizeButton: 26px;
+$fontSizeAds: 80px;
+
+@mixin main-text($fontSize, $fontWeight) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  text-transform: uppercase;
+}
+
+
+@mixin h3 {
+  @include main-text($fontSizeH3, $fontWeightBold);
+  letter-spacing: -0.075em;
+}

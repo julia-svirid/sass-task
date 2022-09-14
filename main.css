@@ -1,0 +1,77 @@
+.button {
+  background-color: #FC2323;
+  color: white;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  border-radius: 43px;
+  padding: 17px 43px;
+  box-shadow: 0 8px 0px -4px rgb(167, 24, 24);
+  cursor: pointer;
+}
+.button span {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.header {
+  background-color: #0B0F34;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "hd-item hd-auth";
+  grid-auto-columns: 3fr 1fr;
+}
+
+.header__item {
+  grid-area: hd-item;
+  padding: 30px 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header__item .search {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__auth {
+  grid-area: hd-auth;
+  border-left: 3px white solid;
+  padding: 30px 65px;
+}
+
+.auth__item {
+  margin-bottom: 20px;
+}
+
+.input {
+  border-radius: 9px;
+  outline: none;
+  height: 65px;
+  width: 100%;
+}
+
+.search__input {
+  margin-right: 5px;
+}
+
+.auth__label {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

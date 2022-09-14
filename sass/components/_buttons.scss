@@ -1,0 +1,32 @@
+@import "../base/fonts";
+
+.button {
+  background-color: #FC2323;
+  color: white;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  border-radius: 43px;
+  padding: 17px 45px;
+  box-shadow: 0 8px 0px -4px rgba(167, 24, 24, 1);
+  cursor: pointer;
+
+  .button__text {
+    @include main-text($fontSizeButton, $fontWeightBold);
+    white-space: nowrap;
+  }
+}
+.auth__button {
+  padding: 17px 20px;
+}
+
+.article__button {
+  background-color: #E5E5E5;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .auth__button {
+    width: 50%;
+  }
+}

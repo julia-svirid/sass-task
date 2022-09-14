@@ -1,0 +1,36 @@
+@import "../base/fonts";
+
+.ads {
+  grid-area: ads;
+  background-color: #D9D9D9;
+  padding: 30px 65px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ads__item {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 70px;
+}
+
+.ads__item__text {
+  @include main-text($fontSizeAds, $fontWeightBold);
+}
+
+@media (max-width: 768px) {
+  .ads {
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+}
+@media (max-width: 640px) {
+  .ads__item {
+    padding: 35px;
+  }
+}
