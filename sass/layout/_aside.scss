@@ -1,0 +1,41 @@
+@import "../base/fonts";
+.aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  background-color: #D9D9D9;
+  padding: 30px 65px;
+}
+
+.aside__item {
+  background-color: #FFFFFF;
+  padding: 22px 25px;
+}
+
+.aside__list {
+  @include main-text($fontSizeMain, $fontWeightNormal)
+}
+
+.aside__list__item {
+  list-style: none;
+  position: relative;
+}
+.aside__list__item:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  height: 1rem;
+  background-color: black;
+  border: 3px solid black;
+  left: -9px;
+}
+
+.h3 {
+  @include h3;
+}
+
+@media (max-width: 768px) {
+  .aside__item {
+    background-color: #D9D9D9;
+  }
+}
+
